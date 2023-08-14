@@ -22,8 +22,8 @@ education = driver.find_elements(By.XPATH, r'/html/body/form/div[4]/div/main/div
 body = driver.find_element(By.TAG_NAME, 'body')
 body.click()
 
-# select education level by yourself, once they finish downloading move it to another folder and rerun the code
-
+# move these to another folder and use SeparateData.py to separate them into their education levels
+# after that use transform to reshape the sheets into desirable form
 for i in range(1, len(states)+1, 1):
     wait = WebDriverWait(driver, 30)
     # driver.find_element(By.XPATH, r'//*[@id="MainContentPlaceHolder_reportingServicesWrapper1_tbl_menu"]/tbody/tr/td[2]/div/div/p').click()

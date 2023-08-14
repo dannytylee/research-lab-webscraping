@@ -1,8 +1,11 @@
 import pandas as pd
 import os
 
-# Set the directory where your Excel files are located
-directory = r'C:\Users\danny\OneDrive\Files\GitHub\research-lab-webscraping\Data'
+# Set the directory where your Excel files are located, run each one at a time
+directory = r'C:\Users\danny\OneDrive\Files\GitHub\research-lab-webscraping\Data\Completing college'
+directory = r'C:\Users\danny\OneDrive\Files\GitHub\research-lab-webscraping\Data\Completing some college'
+directory = r'C:\Users\danny\OneDrive\Files\GitHub\research-lab-webscraping\Data\Completing high school only'
+directory = r'C:\Users\danny\OneDrive\Files\GitHub\research-lab-webscraping\Data\Not completing high school'
 
 # Initialize an empty list to store DataFrames
 dataframes = []
