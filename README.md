@@ -1,6 +1,8 @@
 # research-lab-webscraping
 This was a project for the Economics Research Lab I'm a part of. Goal is to scrape data from the U.S. Department of Agriculture collected on the highest level of educational attainment by county and state over time.
 
+Tableau viz link: https://public.tableau.com/app/profile/danny.lee8249/viz/USDAHighestEducationAttainment/Dashboard1?publish=yes
+
 Few notes:
 - this was my first experience with web scraping
 - data is not stored in the page source - cannot use Beautiful Soup
