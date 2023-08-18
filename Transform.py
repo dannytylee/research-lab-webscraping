@@ -39,15 +39,15 @@ reshaped_data = pd.melt(
 
 print(reshaped_data.columns)
 
-# Split the 'Name' column into 'City' and 'State'
-reshaped_data[['City', 'State']] = reshaped_data['Name'].str.split(', ', n=1, expand=True)
+# Split the 'Name' column into 'County' and 'State'
+reshaped_data[['County', 'State']] = reshaped_data['Name'].str.split(', ', n=1, expand=True)
 
 # Remove any extra whitespace in column headers and values
 reshaped_data.columns = reshaped_data.columns.str.strip()
 reshaped_data['Percentage'] = reshaped_data['Percentage'].astype(str).str.strip('%')
 
 # Reorder columns as needed
-reshaped_data = reshaped_data[['FIPS', 'City', 'State', '2013 Rural-urban Continuum Code*', 'Year', 'Percentage']]
+reshaped_data = reshaped_data[['FIPS', 'County', 'State', '2013 Rural-urban Continuum Code*', 'Year', 'Percentage']]
 
 # Save the reshaped data to a new Excel file
 reshaped_data.to_excel(os.path.join(directory, 'reshaped_data.xlsx'), index=False)
